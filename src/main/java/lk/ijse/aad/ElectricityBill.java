@@ -1,6 +1,6 @@
 package lk.ijse.aad;
 
-import java.util.Scanner;               // Import Scanner class to read user input
+import java.util.Scanner; // Import Scanner class to read user input
 import static java.lang.Integer.MAX_VALUE; // Import MAX_VALUE for large integer
 
 public class ElectricityBill {
@@ -12,7 +12,7 @@ public class ElectricityBill {
         int units = sc.nextInt();             // Read the number of units consumed from user
 
         System.out.println("...........................");
-        double total = calculateBill(units);  // Call calculateBill method to get total bill
+        double total = calculateBill(units);  // Call calculateBill method to get a total bill
         System.out.println("............................");
         System.out.println("Total bill is: " + total); // Print the total bill
     }
@@ -34,7 +34,7 @@ public class ElectricityBill {
 
             // Check if there are units to charge in this slab
             if (limit > previousLimit) {
-                // Calculate number of units in this slab
+                // Calculate the number of units in this slab
                 int unitInSlab = Math.min(units, limit) - previousLimit;
 
                 // Add cost of this slab to total bill
